@@ -1,0 +1,22 @@
+﻿Tareas sin-hilos
+*  El tiempo que utiliza cada tarea para completarse varia en cada ejecución siendo mayor o menor el tiempo utilizado para completar todas las tareas
+* detector de huella digital,ya que la velocidad del lector de huellas tarda en realizar el análisis y determinar de que individuo se trata varia según su rapidez.
+* pedir comida por una app,eso varia según la velocidad del trabajador en tomar el pedido, cocinarlo y llevartelo.
+
+
+tareas con-hilos
+* Pude notar que su velocidad de ejecución fue más rápida y a su vez mejoró  el tiempo de respuesta  con respecto al mismo programa sin hilos, haciendo que las tareas sean ejecutadas a la vez.
+*  No, ya que no son completadas en el orden establecido aunque empiecen al mismo tiempo, termina variando su orden.
+* compartir el link de un grupo de whatsapp a varias personas, esto hace que ejecute las solicitudes en paralelo obteniendo una devolución.
+
+
+sumador-restador con RACE 
+* Logre notar que es siempre el mismo tiempo de ejecución, siendo verificado en determinadas ocasiones.
+* el valor final del acumulador que varia, la gran mayoria termina valiendo 5000 pero hay ciertas ocasiones que a veces toma un valor negativo distinto de 0 que es el código previo.
+* porque ambos hilos son ejecutados al mismo tiempo compartiendo un mismo recurso, siendo la variable global, haciendo que hagan diferentes procesos a la vez.
+* una condición de carrera que no deja de usar hilos se puede solucionar obligando a que el hilo utilizado se procese solo cuando no esté en uso,consultando bloqueos temporales.
+
+
+sumador-restador sin RACE
+* lo que pasa con el valor final del acumulador es siempre 0.
+* Puedo ver que sucede como pasaba en el anterior que se ejecuta al mismo tiempo, por lo menos en mi caso,siendo verificado en varias ocasiones
